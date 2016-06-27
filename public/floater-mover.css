@@ -1,0 +1,16 @@
+#floater {
+	background-color: #ff8000;
+	height: 10rem;
+	width: 10rem;
+	position: relative;
+}
+
+span {
+	position: absolute;
+	height: 99%;
+	width: 99%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	border: 2px solid red;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Foating Away</title>
+	<link href="floater-mover.css" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	</head>
+	<body>
+		<script>
+			$(document).ready(function() {
+				$("div").mouseenter(function () {
+					if($(this).hasClass("shown")){
+						$(this).animate({left: '0rem', top: '0rem'}, 600, function() {
+							$(this).removeClass("shown");
+						});
+					}else{
+						$(this).animate({left: '20rem', top: '20rem'}, 600, function() {
+							$(this).addClass("shown");
+						});
+						}
+				});
+			});
+			
+			
+		</script>
+
+		<div id="floater"><a href="https://i.ytimg.com/vi/aH2ll5bwpKw/maxresdefault.jpg"><span></span></a></div>
+
+
+
+	</body>
+
+</html>
