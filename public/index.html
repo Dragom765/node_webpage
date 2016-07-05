@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Foating Away</title>
-	<link href="floater-mover.css" rel="stylesheet" type="text/css" />
+		<title>Fetching Bears</title>
+	<link href="index-styling.css" rel="stylesheet" type="text/css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 	</head>
 	<body>
-		<script>
-			$(document).ready(function() {
-				$("div").mouseenter(function () {
-					if($(this).hasClass("shown")){
-						$(this).animate({left: '0rem', top: '0rem'}, 600, function() {
-							$(this).removeClass("shown");
-						});
-					}else{
-						$(this).animate({left: '20rem', top: '20rem'}, 600, function() {
-							$(this).addClass("shown");
-						});
-						}
-				});
-			});
-			
-			
-		</script>
+  
+		<script src="main.js"></script>
 
-		<div id="floater"><a href="https://i.ytimg.com/vi/aH2ll5bwpKw/maxresdefault.jpg"><span></span></a></div>
+		<button id="greetings-button">Would you like to be welcomed?</button>
+    <button id="get-button">Get Bears</button>
+    
+    <div>
+      <div id="input-bar">
+        <p>Add a Bear:</p>
+        <p>Name: <input type="text" id="name"></p>
+        <p>ID:   <input type="text" id="id"></p>
+        
+        <button id="add-bear">Add</button>
+        <button id="update-bear">Update</button>
+        <button id="delete-bear">Delete</button>
+      </div>
+    
+    <div id="greeting"></div>
+    <div id="bears"></div>
 
 
 

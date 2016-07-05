@@ -7,7 +7,7 @@ var port = 8080;
 
 var file=new(static.Server)(webroot, {
 	cache: 600,
-	headers: { "X-Powered-By": "node-static"}
+	headers: { "X-Powered-By": "node-static", "Access-Control-Allow-Headers": "http://localhost:9000"}
 });
 
 http.createServer(function(req, res) {
